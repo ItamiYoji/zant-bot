@@ -26,28 +26,28 @@ while True:
             if event.text.lower() == 'начать' or event.text.lower() == 'привет' or event.text.lower() == 'здравствуйте':
                 vk.messages.send(
                     user_id = event.user_id,
-                    message = 'Ты попал в Зантерию. Что это? это мир, где только сильнейшие получают всё. Здесь мы проводим любительские турниры по LoL и TFT. Хочешь быть одним из нас? Если да, то пройди регистрацию (просто нажми на кнопку)',
+                    message = 'Ты попал в Зантерию. Что это? Это мир, где только сильнейшие получают всё. Здесь мы проводим любительские турниры по LoL и TFT. Хочешь быть одним из нас? Если да, то пройди регистрацию (просто нажми на кнопку)',
                     keyboard = open ("registration.json", 'r', encoding = "UTF-8").read(),
                     random_id = random_id()
                 )
             elif event.text.lower() == 'регистрация':
                 vk.messages.send(
                     user_id = event.user_id,
-                    message = 'Чтобы подниматься на вершину тебе нужно зарегистрироваться, всё что нужно это вписать свой ник из лиги сюда:https://vk.com/topic-186161229_41270767 \n Окей, ты готов ломать лица противникам? Лучше всего это делать в компании. Смекаешь? *голос КАПИТАНА Джека Воробья*',
+                    message = 'Чтобы подниматься на вершину тебе нужно зарегистрироваться, всё что нужно это вписать свой ник из лиги сюда: \nhttps://vk.com/topic-186161229_41270767 \n Окей, ты готов побеждать? Лучше всего это делать в компании. Смекаешь? \n*голос КАПИТАНА Джека Воробья*',
                     keyboard = open ("teams.json", 'r', encoding = "UTF-8").read(),
                     random_id = random_id()
                 )
             elif event.text.lower() == 'понеслась':
                 vk.messages.send(
                     user_id = event.user_id,
-                    message = 'Чтобы аннигилировать противников в компании хороших людей, то есть если хочешь вступить в команду, то напиши нашему отцу-прародителю: (https://vk.com/goodzant)  \n Стать кэпом - основать свою команду \n FAQ - вопросы ответы(наш отец прародитель в процессе его создания(нет) \n Правила - перед законом все равны \n Zteam - стать частью организаторского состава) ',
+                    message = 'Чтобы побеждать противников в компании хороших людей (то есть если хочешь вступить в команду), то напиши нашему глав. админу: (https://vk.com/goodzant)  \n Стать кэпом - основать свою команду \n FAQ - вопросы-ответы(наш админ в процессе его создания) \n Правила - перед законом все равны \n Zteam - стать частью организаторского состава) ',
                     keyboard = open ("normal.json", 'r', encoding = "UTF-8").read(),
                     random_id = random_id()
                 )
             elif event.text.lower() == 'стать кэпом':
                 vk.messages.send(
                     user_id = event.user_id,
-                    message = 'Хочешь стать командиром собственного корабля? Напиши тогда сюда: https://vk.com/goodzant',
+                    message = 'Хочешь стать командиром собственного корабля? Напиши тогда сюда: \nhttps://vk.com/goodzant',
                     keyboard = open ("normal.json", 'r', encoding = "UTF-8").read(),
                     random_id = random_id()
                 )
@@ -68,7 +68,7 @@ while True:
             elif event.text.lower() == 'zteam':
                 vk.messages.send(
                     user_id = event.user_id,
-                    message = 'Хочешь стать частью нашей администрации? Пиши нашему отцу-основателю:\n Алексею (https://vk.com/goodzant) ',
+                    message = 'Хочешь стать частью нашей администрации? Пиши нашему глав. админу:\n Алексею (https://vk.com/goodzant) ',
                     keyboard = open ("normal.json", 'r', encoding = "UTF-8").read(),
                     random_id = random_id()
                 )
@@ -76,21 +76,7 @@ while True:
             else:
                 vk.messages.send(
                     user_id = event.user_id,
-                    message = 'Я дико извиняюсь, но я не всего лишь бот, так что не понимаю всех слов. Давай начнём сначала(напишите "Начать") ',
+                    message = 'Я дико извиняюсь, но я не всего лишь бот, так что не понимаю всех слов. Давай начнём сначала(напишите "Начать" или нажмите кнопку) ',
                     keyboard = open ("start.json", 'r', encoding = "UTF-8").read(),
                     random_id = random_id()
                 )
-            # elif event.text.lower() == "link":
-            #     vk.messages.send(
-            #         user_id = event.user_id,
-            #         message = 'https://vk.com/goodzant',
-            #         keyboard = open("keyboard.json", 'r', encoding = "UTF-8").read(),
-            #         random_id = random_id()
-            #     )
-            # else:
-            #     vk.messages.send(
-            #         user_id = event.user_id,
-            #         message = 'bitch',
-            #         keyboard = open("keyboard.json", 'r', encoding = "UTF-8").read(),
-            #         random_id = random_id()
-            #     )
