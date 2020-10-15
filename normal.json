@@ -1,0 +1,10 @@
+{
+  "one_time": false,
+  "buttons":
+[[
+    {"action":{"type": "text", "label": "Стать кэпом"}, "color": "positive"},
+    {"action":{"type": "text", "label": "FAQ"}, "color": "positive"},
+    {"action":{"type": "text", "label": "Правила"}, "color": "positive"},
+    {"action":{"type": "text", "label": "Zteam"}, "color": "positive"}
+    ]]
+}
