@@ -1,0 +1,12 @@
+api
+certifi
+chardet
+idna
+nose
+pip
+requests
+setuptools
+six
+urllib3
+vk
+vk-api
