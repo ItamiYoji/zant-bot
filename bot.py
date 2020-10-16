@@ -1,7 +1,7 @@
 import vk_api, random
 import sqlite3
 
-vk_session = vk = vk_api.VkApi(token='5f8771a9b7310a3e8a2eea9201f6b8036ee45ca09228203b437c03ab3bfc6f4153d07b88440ca2af14720')
+vk_session = vk = vk_api.VkApi(token='0a877d2e4a2493b01d06cec3e3e47bc48ffe069d4565d6b94915931ce69cac7f79e20fa9c546678152fde')
 
 from vk_api.longpoll import VkLongPoll, VkEventType
 
@@ -33,7 +33,7 @@ while True:
             elif event.text.lower() == 'регистрация':
                 vk.messages.send(
                     user_id = event.user_id,
-                    message = 'Чтобы подниматься на вершину тебе нужно зарегистрироваться, всё что нужно это вписать свой ник из лиги сюда: \nhttps://vk.com/topic-186161229_41270767 \n Окей, ты готов побеждать? Лучше всего это делать в компании. Смекаешь? \n*голос КАПИТАНА Джека Воробья*',
+                    message = 'Чтобы подниматься на вершину ты должен зарегистрироваться, всё что нужно это вписать свой ник из лиги сюда: \nhttps://vk.com/topic-186161229_41270767 \n Окей, ты готов побеждать? Лучше всего это делать в компании. Смекаешь? \n*голос КАПИТАНА Джека Воробья*',
                     keyboard = open ("teams.json", 'r', encoding = "UTF-8").read(),
                     random_id = random_id()
                 )
